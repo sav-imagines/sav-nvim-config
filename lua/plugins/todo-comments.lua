@@ -16,11 +16,11 @@ return {
       NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
       TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
 
-      MUST = { icon = " ", color = "#CE3535", alt = { "WILL", "REQUIRED" } },
+      MUST = { icon = " ", color = "#FF6565", alt = { "WILL", "REQUIRED" } },
       SHOULD = { icon = " ", color = "#F7C973" },
-      COULD = { icon = " ", color = "#8DFF87", alt = { "MAYBE", "OPTION", "OPTIONAL" } },
+      COULD = { icon = " ", color = "#B2FFAE", alt = { "MAYBE", "OPTION", "OPTIONAL" } },
 
-      FEEDBACK = { icon = "☝️", color = "#BA6AFF", alt = { "SUGGESTION", "IDEA" } },
+      FEEDBACK = { icon = "☝️", color = "#D5A6FF", alt = { "SUGGESTION", "IDEA" } },
     },
   },
 }
