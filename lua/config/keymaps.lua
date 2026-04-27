@@ -15,9 +15,6 @@ Map("t", "<C-j>", "<cmd>wincmd j<CR>")
 Map("t", "<C-k>", "<cmd>wincmd k<CR>")
 Map("t", "<C-l>", "<cmd>wincmd l<CR>")
 
--- use code actions with c a instead of <leader> c a
-vim.keymap.set("n", "N", "<leader>ca", { noremap = true })
-
 -- allow moving selected text UP-DOWN
 Map("v", "<C-j>", ":m '>+1<CR>gv=gv")
 Map("v", "<C-k>", ":m '<-2<CR>gv=gv")
