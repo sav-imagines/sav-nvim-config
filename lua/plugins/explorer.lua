@@ -7,7 +7,7 @@ return {
       sections = {
         {
           section = "terminal",
-          cmd = "chafa ~/Downloads/IMG_2298.jpg --symbols all --view-size 200x20; sleep .1",
+          cmd = "chafa ~/.config/nvim/assets/IMG_2298.jpg --symbols all --view-size 200x20; sleep .1",
           height = 20,
           padding = 1,
         },
