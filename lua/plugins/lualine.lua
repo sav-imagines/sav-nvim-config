@@ -13,8 +13,13 @@ return {
         function()
           return vim.fn.wordcount().words
         end,
-        separator = { left = "" },
       })
+
+      opts.sections.lualine_z = {
+        function()
+          return "󰥔 " .. os.date("%R")
+        end,
+      }
     end,
   },
 }
