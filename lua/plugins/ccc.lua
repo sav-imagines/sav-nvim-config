@@ -7,9 +7,8 @@ return {
     local ccc = require("ccc")
     local mapping = ccc.mapping
 
+    -- see docs at https://github.com/uga-rosa/ccc.nvim/blob/main/doc/ccc.txt for config
     ccc.setup({
-      -- Your preferred settings
-      -- Example: enable highlighter
       inputs = {
         ccc.input.oklch,
         ccc.input.rgb,
