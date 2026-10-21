@@ -1,6 +1,7 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+
 function Map(mode, lhs, rhs, opts)
   local options = { noremap = true, silent = true }
   if opts then
@@ -18,3 +19,8 @@ Map("t", "<C-l>", "<cmd>wincmd l<CR>")
 -- allow moving selected text UP-DOWN
 Map("v", "<C-j>", ":m '>+1<CR>gv=gv")
 Map("v", "<C-k>", ":m '<-2<CR>gv=gv")
+
+-- exit term with ctrl-t
+Map("t", "<C-t>", function()
+  Snacks.terminal.toggle()
+end)
