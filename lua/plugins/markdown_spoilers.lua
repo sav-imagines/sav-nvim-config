@@ -1,6 +1,6 @@
 return {
   "sav-imagines/markdown-spoilers",
   config = {
-    color = "#9553a5",
+    color = require("catppuccin.palettes.frappe").maroon,
   },
 }

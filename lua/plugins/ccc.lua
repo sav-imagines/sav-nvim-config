@@ -1,5 +1,6 @@
 return {
   "uga-rosa/ccc.nvim",
+  enabled = false,
   opts = function()
     -- Enable true color
     vim.opt.termguicolors = true
