@@ -10,8 +10,22 @@
 -- autoload CsvView for [ct]sv files
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.csv", "*.tsv" },
-  callback = function()
-    require("csvview").enable()
-  end,
+  command = "CsvViewEnable",
   desc = "Enable CsvView on opening tsv files",
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*.md" },
+  callback = function()
+    vim.b.completion = false
+  end,
+  desc = "Disable completion in md files",
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*/vimwiki/*" },
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+  desc = "Disable spellchecking in vimwiki",
 })
